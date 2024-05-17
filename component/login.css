@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+ 
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  max-width: 100%;
+}
+
+.headlogin {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0038FF;
+  font-weight: bold; 
+}
+
+
+
+
+.remember-forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 40px;
+  background-color: #0038FF;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(0, 56, 255, 0.8);
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-link {
+  text-align: center;
+}
+
+.register-link a {
+  color: #3300ff;
+  font-weight: bold;
+}
