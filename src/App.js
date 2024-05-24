@@ -13,6 +13,7 @@ import Login from './page/login';
 import Register from './page/register';
 import Notification from './page/notification';
 import Setting from './page/setting';
+import LoanRequest from './page/LoanRequest';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function MainLayout() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/notification" element={<Notification />} />
         <Route path="/setting" element={<Setting />} />
+        <Route path="/loanreq" element={<LoanRequest />} />
       </Routes>
       <Footer />
     </>
