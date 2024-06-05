@@ -5,9 +5,8 @@ import ButtonIncome from '../component/ButtonIncome';
 import ButtonStoreDebt from '../component/ButtonStoreDebt';
 import ButtonDisburse from '../component/ButtonDisbursement';
 import ButtonAgree from '../component/ButtonAgreement';
-import ButtonExpenses from '../component/ButtonExpenses';
 import ButtonGuarantee from '../component/ButtonGuarantee';
-
+import ButtonRequestMoney from '../component/ButtonRequestMoney';
 function request_main() {
   return (
     <div>
@@ -33,7 +32,7 @@ function request_main() {
               <ButtonAgree />
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={2}>
-              <ButtonExpenses />
+              <ButtonRequestMoney />
             </Grid>
           </Grid>
           <Grid container item xs={12} spacing={3} justifyContent="center">

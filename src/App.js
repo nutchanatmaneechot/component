@@ -14,7 +14,10 @@ import Register from './page/register';
 import Notification from './page/notification';
 import Setting from './page/setting';
 import LoanRequest from './page/LoanRequest';
-
+import DisburseAdvancePayment from './page/DisburseAdvancePayment';
+import DisbursementOfPersonal from './page/DisbursementOfPersonal';
+import PaymentRequest from './page/PaymentRequest';
+import GuaranteeRequest from './page/GuaranteeRequest';
 function App() {
   return (
     <Router>
@@ -43,6 +46,10 @@ function MainLayout() {
         <Route path="/notification" element={<Notification />} />
         <Route path="/setting" element={<Setting />} />
         <Route path="/loanreq" element={<LoanRequest />} />
+        <Route path="/DisburseAdvancePayment" element={<DisburseAdvancePayment />} />
+        <Route path="/DisbursementOfPersonal" element={<DisbursementOfPersonal />} />
+        <Route path="/PaymentRequest" element={<PaymentRequest />} />
+        <Route path="/GuaranteeRequest" element={<GuaranteeRequest />} />
       </Routes>
       <Footer />
     </>

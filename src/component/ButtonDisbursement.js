@@ -9,7 +9,7 @@ const DocumentCard = () => {
     <Card sx={{ width: 200, height: 200, borderRadius: 2, backgroundColor: '#f0f0f0' }}>
       <CardActionArea
         component={Link}
-        to="/history"
+        to="/DisburseAdvancePayment"
         sx={{
           display: 'flex',
           flexDirection: 'column',

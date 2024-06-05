@@ -89,7 +89,7 @@ export default function TravelExpenseRequest() {
         >
         
           <Typography variant="h4" gutterBottom>
-            ขออนุมัติเบิกค่าใช้จ่าย
+            ขออนุมัติเบิกค่าเดินทาง
           </Typography>
 
           <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%' }}>

@@ -10,9 +10,6 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import InputLabel from '@mui/material/InputLabel';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import IconButton from '@mui/material/IconButton';
 import { useNavigate } from 'react-router-dom';
@@ -217,24 +214,14 @@ export default function LoanRequest() {
 
           <Grid container spacing={2} alignItems="center" sx={{ marginTop: 2 }}>
             <Grid item xs={12} md={6}>
-              <FormControl fullWidth>
-                <InputLabel id="payee-label">จ่ายเงินยืมให้แก่</InputLabel>
-                <Select
-                  labelId="payee-label"
-                  id="payee"
-                  name="payee"
-                  value={loanDetails.payee}
-                  onChange={handleChange}
-                  label="จ่ายเงินยืมให้แก่"
-                >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value="บุคคล">บุคคล</MenuItem>
-                  <MenuItem value="บริษัท">บริษัท</MenuItem>
-                  <MenuItem value="หน่วยงาน">หน่วยงาน</MenuItem>
-                </Select>
-              </FormControl>
+              <TextField
+                label="จ่ายเงินยืมให้แก่"
+                variant="outlined"
+                name="payee"
+                value={loanDetails.payee}
+                onChange={handleChange}
+                fullWidth
+              />
             </Grid>
             <Grid item xs={12} md={6}>
               <TextField
@@ -280,7 +267,6 @@ export default function LoanRequest() {
             </Button>
           </Box>
         </Box>
-
       </Paper>
     </Box>
   );
